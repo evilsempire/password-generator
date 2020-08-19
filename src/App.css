@@ -1,0 +1,74 @@
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+html, body {  margin: 0;
+  padding: 0;
+  text-align: center; }
+.App {   position: absolute;
+  display:  inline-block;
+  left:     -500px;
+  width:    1000px;
+  margin:   0 50%;
+  top: 30%;
+}
+
+.generate{
+  margin: 10px 0px;
+    float: right;
+}
+
+.copy{
+  padding: 10px;
+  margin: 10px 0px;
+  border: solid 1px #a56b6b;
+  border: 1px #cccccc solid;
+}
+
+.copy:hover{
+  cursor: pointer;
+  background: rgb(219, 255, 219);
+  border-color: rgb(0, 198, 66);
+}
+
+.copy-icon{
+  float: right;
+}
+
+.error{
+  color: #f44336;
+}
