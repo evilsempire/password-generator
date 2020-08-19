@@ -26,10 +26,12 @@ class InputField extends React.Component {
             error = "Should be number."
         }else if(passwordLength > 50){
             error = "Password length cannot be exceed than 50."
+        }else if(passwordLength< 1){
+            error = "Password length cannot be less than 1"
         }
 
         this.setState({ passwordLength, error  }); 
-        this.props.setValue(passwordLength, false)
+        this.props.setValue(passwordLength, false,error)
     }
 
     render() {

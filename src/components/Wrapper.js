@@ -10,24 +10,19 @@ class Wrapper extends React.Component {
         super(props);
         this.state = {
             passwordLength: 0,
-            isTriggered: false
+            isTriggered: false,
+            error: ""
         }
     }
 
     render() {
-        // return <Container maxWidth="sm">
-        //     <InputField setValue={(passwordLength,isTriggered) => this.setState({passwordLength,isTriggered})}/>
-        //     {this.state.isTriggered ? <Logic passwordLength={this.state.passwordLength}/>: null}
-        //     <ButtonField calculate={(isTriggered) => this.setState({isTriggered: !isTriggered})}/>
-        // </Container>
         return (
             <Card variant="outlined">
                 <CardContent>
-                    
                     <Container maxWidth="sm">
-                        <InputField setValue={(passwordLength, isTriggered) => this.setState({ passwordLength, isTriggered })} />
+                        <InputField setValue={(passwordLength, isTriggered,error) => this.setState({ passwordLength, isTriggered,error })} />
                         {this.state.isTriggered ? <Logic passwordLength={this.state.passwordLength} /> : null}
-                        <ButtonField calculate={(isTriggered) => this.setState({ isTriggered: !isTriggered })} />
+                        <ButtonField error={this.state.error} calculate={(isTriggered) => this.setState({ isTriggered: !isTriggered })} />
                     </Container>
                 </CardContent>
             </Card>

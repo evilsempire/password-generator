@@ -6,7 +6,7 @@ class ButtonField extends React.Component {
     render() {
         return (
             <div className="generate">
-                <Button variant="outlined" onClick={() => this.props.calculate()}>Generate</Button>
+                <Button disabled={this.props.error ? true: false} variant="outlined" onClick={() => this.props.calculate()}>Generate</Button>
             </div>
         )
     }
