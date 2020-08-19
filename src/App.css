@@ -39,12 +39,11 @@
 html, body {  margin: 0;
   padding: 0;
   text-align: center; }
-.App {   position: absolute;
-  display:  inline-block;
-  left:     -500px;
-  width:    1000px;
-  margin:   0 50%;
-  top: 30%;
+
+.App {  
+   width: 80%;
+    margin: auto;
+    display:block;
 }
 
 .generate{
